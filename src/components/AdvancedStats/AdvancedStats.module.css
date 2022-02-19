@@ -1,0 +1,35 @@
+.advStats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-bottom: 9rem;
+}
+
+.header {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (min-width: 429px) {
+    .advStats {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    .header {
+       font-size: 3rem;
+    }
+
+    .paragraph {
+        font-size: 1.2rem;
+    }
+}
+
+

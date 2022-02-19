@@ -1,0 +1,100 @@
+.form {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-primary-dark-violet);
+    background-image: url('../../assets/bg-shorten-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: top right;
+    
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form__input {
+    padding: 10px 1rem;
+    margin-bottom: 1rem;
+    
+    border: 2px solid var(--color-primary-white);
+    border-radius: 10px;
+    
+    font-size: 1rem;
+    outline: none;
+}
+
+.form__input:focus {
+    border: 2px solid var(--color-primary-cyan);
+}
+
+.form__input--invalid { 
+    color: var(--color-secondary-red);
+    border: 2px solid var(--color-secondary-red);
+}
+
+.form__validation {
+    position: relative;
+    top: -7px;
+    color: var(--color-secondary-red);
+    font-style: italic;
+    font-size: 0.8em;
+    display: none;
+}
+
+.form__validation--active {
+    display: block;
+}
+
+.shorten_it_button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 429px) {
+    .form {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+
+       
+        background-image: url('../../assets/bg-shorten-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .form__input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    
+        width: 80%;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0;
+    
+        border: 2px solid var(--color-primary-white);
+        border-radius: 10px;
+        
+        font-size: 1.2rem;
+        outline: none;
+    }
+    
+    .form__validation {
+        position: absolute;
+        top: 6.7rem;
+        color: var(--color-secondary-red);
+        font-style: italic;
+        font-size: 0.8em;
+        /* display:none; */
+    }
+    
+    .shorten_it_button {
+        width: 20%;
+    }
+
+}

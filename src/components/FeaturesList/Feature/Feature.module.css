@@ -1,0 +1,44 @@
+.featureItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem 3rem ;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.featureItem:first-of-type {
+    top: -50px;
+}
+
+.featureItem:last-of-type {
+    top: 50px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: var(--color-primary-dark-violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    left: calc(100% /2 - 50px)
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 429px) {
+    .circle {
+        top: -50px;
+        left: 50px;
+    }
+}
+

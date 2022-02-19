@@ -1,0 +1,37 @@
+.featuresListWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.lineBehind {
+    background-color: var(--color-primary-cyan);
+    height: 1000px;
+    width: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 900px;
+    margin-left: calc((100% - 5px) / 2);
+}
+
+
+@media (min-width: 429px) {
+    .featuresListWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: stretch;
+        position: relative;
+        z-index: 2;
+    }
+
+    .lineBehind {
+        height: 10px;
+        width: auto;
+        position: relative;
+        top: -160px;
+        margin-left: 0;
+    }
+}

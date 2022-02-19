@@ -1,0 +1,91 @@
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 10rem;
+    overflow-x: hidden;
+}
+
+.imageGuyWorking {
+    order: 0;
+    position: relative;
+    width: 120%;
+    left: 30px;
+    margin-right: -10px;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    order: 2;    
+}
+
+.get_started_button {
+    padding: 1rem 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.15;
+}
+
+p {
+    text-align: center;
+    color: var(--color-neutral-grayish-violet)
+}
+
+
+@media (min-width: 429px) {    
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 0 5rem;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        background: url(../../assets/illustration-working.svg);
+        background-repeat: no-repeat;
+        background-size: 550px auto;
+        background-position: top;
+        right: -50px;
+        width: 550px;
+        height: 550px;
+        z-index: 0;
+    }
+
+    .hero__content {
+        order: 1;
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 2;
+    }
+
+    .imageGuyWorking { 
+        display: none;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 4rem;
+    }
+
+    p {
+        text-align: left;
+        color: var(--color-neutral-grayish-violet)
+    }
+
+    .get_started_button {
+        margin-top: 2rem;
+    }
+
+
+}
+
