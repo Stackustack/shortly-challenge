@@ -1,46 +1,33 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Shortly
 
-## Available Scripts
+![Alt Text](https://media.giphy.com/media/AIf6PBlEUKvBCvmgKU/giphy.gif)
 
-In the project directory, you can run:
+Dummy webpage. Login/Sign Up and most of the links beside mentioned in "Features" sections are not functional. 
+This project was made as one of Frontend Mentor challenges. 
+- Live: https://shortly-challenge.web.app/
+- Frontend Mentor challenge: https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G
 
-### `npm start`
+Features: 
+- Sidemenu on Mobile view
+- HTTP calls (to make shortened links)
+- Storing all shortened links in localStorage 
+- "Copy to clipboard" on button click
+- RWD (breakpoint at 429px)
+    - Mobile
+    - Deskotop
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Technologies: 
+- react, 
+- axio
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+TODO: 
+- implement SCSS solutions and clean styles
+- implement Formik solution for Form Shortener
+- organize logic (export axios calls to custom hooks, export validation to separate custom hook and extend it to usuall behavior (is input really url etc))
+- clean form input after shortening
+- spinner when loading
+- remove link item from the list (extended functionality)
+- cleaner way to handle localStorage?
+- animations (fade-in for a new ShortenedLinks list items)
+- more breakpoints
